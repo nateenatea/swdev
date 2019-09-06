@@ -52,8 +52,14 @@ public class Window extends JFrame{
 
 				for(int i=0; i < numParticles; i++) {
 					Color color = new Color((int)(Math.random() * 0x1000000));
-					Particle proton = new Particle("Proton", mouseX , mouseY, color , Updown());
+					Particle proton = new Trion("Proton", mouseX , mouseY, color , Updown());
 					particles.add(proton);
+					Particle proton2 = new Squaron("Proton", mouseX , mouseY, color , Updown());
+					particles.add(proton2);
+					Particle proton3 = new BrownianParticle("Proton", mouseX , mouseY, color , Updown());
+					particles.add(proton3);
+					Particle proton4 = new AccelParticle("Proton", mouseX , mouseY, color , Updown());
+					particles.add(proton4);
 				}
 				
 			}

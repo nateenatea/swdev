@@ -8,14 +8,14 @@ public class Particle {
 	private static final int avgSize = 30;			// average size in pixels
 	private static final int avgLife = 50;			// average life in milliseconds
 	
-	private int x;
-	private int y;
-	private int dx;
-	private int dy;
-	private int size;
-	private int life;
-	private Color color;	
-	private String name;
+	public int x;
+	public int y;
+	public int dx;
+	public int dy;
+	public int size;
+	public int life;
+	public Color color;	
+	public String name;
 	
 	public Particle(String name, int x, int y, Color color, boolean isUpward)
 	{
