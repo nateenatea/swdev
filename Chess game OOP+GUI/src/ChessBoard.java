@@ -37,13 +37,23 @@ public class ChessBoard {
 		board[row][col] = null;
 	}
 	
-	void movePiece(Coordinate from,Coordinate to) {
-		ChessPiece cur = board[from.row][from.col];
-		if(cur.isValidMove(this, to.row, to.col)) {
-			cur.col = to.col;
-			cur.row = to.row;
-			board[from.row][from.col] = null;
-			board[to.row][to.col] = cur;	
+//	void movePiece(Coordinate from,Coordinate to) {
+//		ChessPiece cur = board[from.row][from.col];
+//		if(cur.isValidMove(this, to.row, to.col)) {
+//			cur.col = to.col;
+//			cur.row = to.row;
+//			board[from.row][from.col] = null;
+//			board[to.row][to.col] = cur;	
+//		}
+//	}
+	
+	void movePiece(int row, int col, int row2, int col2) {
+		ChessPiece cur = board[row][col];
+		if(cur.isValidMove(this, row2, col2)) {
+			cur.col = col2;
+			cur.row = row2;
+			board[row][col] = null;
+			board[row2][col2] = cur;	
 		}
 	}
 	

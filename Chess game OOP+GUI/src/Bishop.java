@@ -34,10 +34,7 @@ public class Bishop extends ChessPiece {
 				return true;
 			if((this.row+i)==row && (this.col + i ) == col)
 				return true;
-		}
-		
-		
-		
+		}		
 		return false;
 	}
 	

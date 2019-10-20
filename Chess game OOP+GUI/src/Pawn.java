@@ -28,6 +28,9 @@ public class Pawn extends ChessPiece {
 		if(this.row-1 == row) {
 			return true;
 		}
+		if(this.row+1 == row) {
+			return true;
+		}
 		return false;
 	}
 	

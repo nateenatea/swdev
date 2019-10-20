@@ -13,15 +13,14 @@ public class Chess {
 		Player player1, player2 = new Player();
 		
 		while(true) {
-			Scanner position = new Scanner(System.in);
-			System.out.print("Move: ");	
-			move = position.next(); 	
-			
-			Coordinate from = new Coordinate(move.substring(0,2));
-			Coordinate to = new Coordinate(move.substring(2,4));
-			board.movePiece(from,to);
-			board.printboard();
+//			Scanner position = new Scanner(System.in);
+//			System.out.print("Move: ");	
+//			move = position.next(); 	
+//			
+//			Coordinate from = new Coordinate(move.substring(0,2));
+//			Coordinate to = new Coordinate(move.substring(2,4));
+//			board.movePiece(from,to);
+//			board.printboard();
 		}
-
 	}
 }
